@@ -1,0 +1,73 @@
+# HC2EM Inventory
+
+## Purpose
+
+`hc2em_inventory` helps Harvard Cryo-EM Center staff search the Grid inventory directories and produce a report for a selected dates.
+
+## Requirements
+
+- macOS/unix
+- Python 3
+- Dropbox desktop app installed and access to the shared Harvard Cryo-EM Center Dropbox content
+
+The expected search location is:
+
+```text
+~/Dropbox/Harvard Cryo-EM Center/Grid_inventory_and_data_collection_sheets/User_Directories
+```
+
+## Install
+
+Clone the repository and enter its folder:
+
+```bash
+git clone https://github.com/QiuyeLi/hc2em_inventory
+cd hc2em_inventory
+```
+
+## Run
+
+From the repository folder, run:
+
+```bash
+python get_inventory.py
+```
+
+When prompted:
+
+- Enter a date as `YYYYMMDD`, or press Enter to use today.
+- Enter the requested lookback value to include the desired prior period.
+- Use `c` to continue, `q` to quit, or `s` to skip when those options are offered by the script.
+
+Reports are written to:
+
+```text
+<repo>/output/YYYY_Mon_DD
+```
+
+## Reviewing results
+
+The script uses filename and directory matching to build an overview. Matching is not a substitute for staff judgment: manually review the output and any ambiguous, missing, or unexpected matches before relying on the report.
+
+Terminal messages may use color to make status and review items easier to identify. To disable colored output, run:
+
+```bash
+NO_COLOR=1 python3 get_inventory.py
+```
+
+## Dropbox cloud-only files
+
+If Dropbox files or folders are cloud-only, they may need to be downloaded/materialized locally before the script can inspect them. Ensure the required content is available on this Mac before running the inventory.
+
+## Future plan
+
+Potential future companion script:
+
+    set_inventory.py
+
+This could send staff-updated inventory PDFs back to the appropriate user
+folders. 
+
+## Author
+
+Qiuye Li
