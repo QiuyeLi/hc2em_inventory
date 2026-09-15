@@ -2,13 +2,14 @@
 
 ## Purpose
 
-`hc2em_inventory` helps Harvard Cryo-EM Center staff search the Grid inventory directories and produce a report for a selected dates.
+`hc2em_inventory` helps Harvard Cryo-EM Center staff search the Grid inventory directories and produce a report for a selected dates. The inventories are created and sorted by user, but oftentimes staff members need to find/sort them by dates, such as deciding what to clip/unload/load for today, or figuring out what happened on March 10th 2020.
 
 ## Requirements
 
 - macOS/unix
 - Python 3
 - Dropbox desktop app installed and access to the shared Harvard Cryo-EM Center Dropbox content
+- The user submitted the correct inventory file in .pdf format, with the filename containing the session date
 
 The expected search location is:
 
