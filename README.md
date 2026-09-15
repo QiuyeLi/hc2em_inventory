@@ -2,7 +2,7 @@
 
 ## Purpose
 
-`hc2em_inventory` helps Harvard Cryo-EM Center staff search the grid inventory directories and produce a report for selected dates. At HC2EM, the inventories are created and sorted by user, but oftentimes staff members need to find/sort them by dates, such as checking what to clip/unload/load for today, or figuring out what happened on March 10th 2020.
+`get_inventory` helps Harvard Cryo-EM Center staff search the grid inventory directories and produce a report for selected dates. At HC2EM, the inventories are created and sorted by user, but oftentimes staff members need to find/sort them by dates, such as checking what to clip/unload/load for today, or figuring out what happened on March 10th 2020.
 
 ## Requirements
 
