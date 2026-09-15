@@ -50,7 +50,7 @@ Reports are written to:
 
 The script uses filename and directory matching to build an overview. Manually review the output and any ambiguous, missing, or unexpected matches before relying on the report.
 
-Terminal messages may use color to make status and review items easier to identify. To disable colored output, run:
+To disable colored output, run:
 
 ```bash
 NO_COLOR=1 python get_inventory.py
