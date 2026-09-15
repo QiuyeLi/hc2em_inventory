@@ -11,7 +11,7 @@
 - Dropbox desktop app installed and access to the shared Harvard Cryo-EM Center Dropbox content
 - The user submitted the correct inventory file in .pdf format, with the filename containing the session date
 
-The expected search location is:
+The expected search location is below, but if it does not exist, the script will search for it
 
 ```text
 ~/Dropbox/Harvard Cryo-EM Center/Grid_inventory_and_data_collection_sheets/User_Directories
@@ -19,7 +19,7 @@ The expected search location is:
 
 ## Install
 
-Clone the repository and enter its folder:
+Clone the repository and enter its folder, or maybe just copy this short script
 
 ```bash
 git clone https://github.com/QiuyeLi/hc2em_inventory
